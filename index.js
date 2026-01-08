@@ -115,4 +115,19 @@ function capitalizeFirst() {
     .join(" ");
 }
 
-console.log(capitalizeFirst());
+// console.log(capitalizeFirst());
+
+// Problem 9: Find the Factorial of a Number
+
+function factorial() {
+    const n = parseInt(prompt("Enter a number to calculate factorial: "));
+    let result = 1; 
+    for (let i = 1; i <= n; i++) {
+        result *= i; 
+    }
+    return result;
+}
+
+
+console.log(factorial());
+
