@@ -129,5 +129,26 @@ function factorial() {
 }
 
 
-console.log(factorial());
+// console.log(factorial());
+
+// Problem 10: PingPong Challenge
+
+function pingPong() {
+    let arr = []
+    for (let i = 1; i <= 20; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            arr.push("PingPong")
+        } else if (i % 3 === 0) {
+            arr.push("Ping")
+        } else if (i % 5 === 0) {
+            arr.push("Pong")
+        } else {
+            arr.push(i)
+        }
+    }
+    return arr
+}
+
+// console.log(pingPong())
+
 
