@@ -59,4 +59,20 @@ function findMaxNum(){
     return max;
 }
 
-console.log(findMaxNum()); 
+// console.log(findMaxNum()); 
+
+// Problem 5: Remove Duplicates from an Array
+
+function removeDuplicate() {
+    const input = prompt('Enter numbers separated by commas: ');
+    const arr = input.split(',').map(Number);
+    let newArr = [];
+    for (let num of arr) {
+        if (!newArr.includes(num)) {
+            newArr.push(num);
+        }
+    }
+    return newArr;
+}
+
+console.log(removeDuplicate());
