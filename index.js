@@ -75,4 +75,19 @@ function removeDuplicate() {
     return newArr;
 }
 
-console.log(removeDuplicate());
+// console.log(removeDuplicate());
+
+
+// Problem 6: Sum of All Numbers in an Array
+
+function sum() {
+    const input = prompt('Enter numbers separated by commas: ');
+    const arr = input.split(',').map(Number);
+    let sum = 0;
+    for (let num of arr) {
+        sum += num;
+    }
+    return sum;
+}
+
+console.log(sum());
