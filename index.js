@@ -8,4 +8,20 @@ function reverseString(str){
     return reverse
 }
 
-console.log(reverseString('hello'))
+// console.log(reverseString('hello'))
+
+
+// Problem 2: Count Vowels in a String
+
+function countVowel (str){
+    const vowel = 'aeiouAEIOU'
+    let count = 0
+    for(let char of str){
+        if(vowel.includes(char)){
+            count++
+        }
+    }
+    return count;
+}
+
+console.log(countVowel("programming"))
