@@ -90,4 +90,21 @@ function sum() {
     return sum;
 }
 
-console.log(sum());
+// console.log(sum());
+
+// Problem 7: Find Even Numbers in an Array
+
+function evenNumber() {
+    const input = prompt('Enter numbers separated by commas: ');
+    const arr = input.split(',').map(Number);
+
+    let evenNumber = [];
+    for (let num of arr) {
+        if (num % 2 === 0) {
+            evenNumber.push(num);
+        }
+    }
+    return evenNumber;
+}
+
+console.log(evenNumber());
