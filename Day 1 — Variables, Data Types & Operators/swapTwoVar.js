@@ -7,9 +7,13 @@
 // Hint: Try using destructuring or arithmetic operators.
 
 const SwapVar = (a, b) => {
-    a += b;
-    b = a - b
-    a = a -b
+    // a += b;
+    // b = a - b
+    // a = a -b
+
+    // other way
+    
+    [a, b] = [b, a]
      return [a, b]
 }
 
