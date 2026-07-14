@@ -133,22 +133,40 @@ function factorial() {
 
 // Problem 10: PingPong Challenge
 
-function pingPong() {
-    let arr = []
-    for (let i = 1; i <= 20; i++) {
-        if (i % 3 === 0 && i % 5 === 0) {
-            arr.push("PingPong")
-        } else if (i % 3 === 0) {
-            arr.push("Ping")
-        } else if (i % 5 === 0) {
-            arr.push("Pong")
-        } else {
-            arr.push(i)
-        }
-    }
-    return arr
-}
+// function pingPong() {
+//     let arr = []
+//     for (let i = 1; i <= 20; i++) {
+//         if (i % 3 === 0 && i % 5 === 0) {
+//             arr.push("PingPong")
+//         } else if (i % 3 === 0) {
+//             arr.push("Ping")
+//         } else if (i % 5 === 0) {
+//             arr.push("Pong")
+//         } else {
+//             arr.push(i)
+//         }
+//     }
+//     return arr
+// }
 
 // console.log(pingPong())
+
+
+// functional solution for ping pong.
+
+
+function pingPong() {
+    return Array.from({ length: 20 }, (_, index) => {
+        const i = index + 1;
+        if (i % 15 === 0) return "PingPong"; // 3 * 5 = 15
+        if (i % 3 === 0) return "Ping";
+        if (i % 5 === 0) return "Pong";
+        return i;
+    });
+}
+
+console.log(pingPong());
+
+
 
 
