@@ -128,6 +128,16 @@ function factorial() {
     return result;
 }
 
+// const memo = {};
+// const factorialMemo = (n) => {
+//     if (n <= 1) return 1;
+//     if (memo[n]) return memo[n]; // Return cached result
+    
+//     memo[n] = n * factorialMemo(n - 1);
+//     return memo[n];
+// };
+
+
 
 // console.log(factorial());
 
