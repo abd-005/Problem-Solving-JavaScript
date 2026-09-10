@@ -4,22 +4,33 @@
 // Input: 'the cat sat on the mat'Output: {the: 2, cat: 1, sat: 1, on: 1, mat: 1}
 // Hint: Split by spaces, then reduce into a frequency object.
 
-const wordCount = (sentence) => {
-    const words = sentence.split(" ")
+// const wordCount = (sentence) => {
+//     const words = sentence.split(" ")
 
-    let arr = {}
+//     let arr = {}
 
-    for (let word of words) {
-        if(arr[word]){
-            arr[word]++
-        }else{
-            arr[word] = 1
-        }
-    }
+//     for (let word of words) {
+//         if(arr[word]){
+//             arr[word]++
+//         }else{
+//             arr[word] = 1
+//         }
+//     }
         
         
-        return arr
+//         return arr
         
-}
+// }
+
+
+const wordCount = (sentence) =>
+  sentence
+    .toLowerCase()
+    .trim()
+    .split(/\s+/) // Handles multiple spaces gracefully
+    .reduce((acc, word) => {
+      acc[word] = (acc[word] || 0) + 1;
+      return acc;
+    }, {});
 
 console.log(wordCount('the cat sat on the mat'))
