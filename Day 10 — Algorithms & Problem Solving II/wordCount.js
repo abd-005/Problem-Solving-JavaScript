@@ -4,6 +4,10 @@
 // Input: 'the cat sat on the mat'Output: {the: 2, cat: 1, sat: 1, on: 1, mat: 1}
 // Hint: Split by spaces, then reduce into a frequency object.
 
+
+//////////////////////////////
+
+
 // const wordCount = (sentence) => {
 //     const words = sentence.split(" ")
 
@@ -21,6 +25,9 @@
 //         return arr
         
 // }
+
+
+//////////////////////////////
 
 
 const wordCount = (sentence) =>
