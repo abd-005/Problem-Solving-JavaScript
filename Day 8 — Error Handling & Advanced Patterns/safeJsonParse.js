@@ -5,15 +5,13 @@
 // Hint: Use try/catch inside the function.
 
 
-const safeJsonParse = (props) => {
-    let res;
-    try {
-        res = JSON.parse(props)
-    } catch (error) {
-        res = null
-    }
-    return res
-}
+const safeJsonParse = (jsonStr) => {
+  try {
+    return JSON.parse(jsonStr);
+  } catch {
+    return null;
+  }
+};
 
-console.log(safeJsonParse('{"a":1}'))
-console.log(safeJsonParse('bad json'))
+console.log(safeJsonParse('{"a":1}')); // { a: 1 }
+console.log(safeJsonParse('bad json')); // null
