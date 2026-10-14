@@ -1,8 +1,8 @@
-// Problem 7: Count Vowels in a String  [Easy]
-// Description: Write a function countVowels(str) that counts and returns the number of vowels (a, e, i, o, u) in a string.
+// Problem 7: Reverse a String  [Easy]
+// Description: Write a function reverseString(str) that returns the string with its characters in reverse order.
 // Example:
-// Input: 'hello'   → Output: 2Input: 'javascript' → Output: 3
-// Hint: Use a loop or match() with a regular expression.
+// Input: 'hello'   → Output: 'olleh'Input: 'javascript' → Output: 'tpircsavaj'
+// Hint: Use split('').reverse().join('').
 
 const reversedString = (string) => {
     return string.split('').reverse().join('')
