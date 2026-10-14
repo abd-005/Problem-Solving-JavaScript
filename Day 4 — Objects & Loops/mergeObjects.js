@@ -5,14 +5,9 @@
 // Hint: Use the spread operator or Object.assign().
 
 const mergeObjects = (obj1, obj2) => {
-    // const mergedObj = {...obj1, ...obj2} 
-    // return mergedObj
-
-    /////// Other Way /////////
-
-    const mergedObj = Object.assign(obj1, obj2)
-    return mergedObj
-
+    // Spread creates a new object, leaving both inputs untouched.
+    // (Object.assign(obj1, obj2) would mutate obj1.)
+    return { ...obj1, ...obj2 };
 }
 
 
