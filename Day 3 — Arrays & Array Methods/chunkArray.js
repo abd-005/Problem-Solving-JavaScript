@@ -5,12 +5,14 @@
 // Hint: Use a while loop with slice().
 
 const chunkArray = (arr, size) => {
+    if (size <= 0) return [];
 
-    let i = 0;
-    let result = []
-    while(i % size === 0){
-        
+    const result = [];
+    for (let i = 0; i < arr.length; i += size) {
+        result.push(arr.slice(i, i + size));
     }
+
+    return result;
 }
 
 
