@@ -6,7 +6,7 @@
 
 
 const toFahrenheit = (celsius) => {
-    return res = (celsius * 9/5) + 32
+    return (celsius * 9/5) + 32
 }
 
 console.log(toFahrenheit(100))

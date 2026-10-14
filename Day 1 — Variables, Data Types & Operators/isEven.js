@@ -6,7 +6,7 @@
 
 
 const isEven = (num) => {
-    return res = num % 2 == 0 ? true : false;
+    return num % 2 === 0;
 }
 
 console.log(isEven(7))

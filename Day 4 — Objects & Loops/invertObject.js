@@ -6,8 +6,7 @@
 
 const invertObject = (obj) => {
     const newObj = {}
-    for(key in obj){
-        console.log(obj[key])
+    for(const key in obj){
         newObj[obj[key]] = key
     }
     return newObj

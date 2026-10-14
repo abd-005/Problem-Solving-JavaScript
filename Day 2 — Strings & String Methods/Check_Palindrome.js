@@ -5,12 +5,8 @@
 // Hint: Compare the string to its reverse.
 
 const CheckPalindrome = (str) => {
-    reverseStr = str.split("").reverse().join("")
-    if (str === reverseStr) {
-        return true
-    } else{
-        return false
-    }
+    const reverseStr = str.split("").reverse().join("")
+    return str === reverseStr
 }
 
 console.log(CheckPalindrome("eye"))

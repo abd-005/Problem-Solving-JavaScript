@@ -5,7 +5,7 @@
 // Hint: Use Math.max() or if-else conditions.
 
 const largest = (...arr) => {
-    return max = Math.max(...arr)
+    return Math.max(...arr)
 }
 
 console.log(largest(3, 4, 5))

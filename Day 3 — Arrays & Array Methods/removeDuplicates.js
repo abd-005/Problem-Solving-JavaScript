@@ -14,11 +14,8 @@
 
 
 const removeDuplicates = (arr) => {
-  let newArray = [];
-
-  newArray = arr.filter((num, i) => arr.indexOf(num) === i);
-  return newArray;
+  return arr.filter((num, i) => arr.indexOf(num) === i);
 };
 
-arr = [1, 2, 2, 3, 3, 4];
+const arr = [1, 2, 2, 3, 3, 4];
 console.log(removeDuplicates(arr));
