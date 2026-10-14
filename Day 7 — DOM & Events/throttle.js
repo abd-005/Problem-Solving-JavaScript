@@ -6,14 +6,14 @@
 
 const throttle = (fn, limit) => {
     let lastCalled = 0;
-    return function (params) {
+    return function (...args) {
 
-        let currentTime = Date.now()
+        const currentTime = Date.now()
 
-        let currentLimit = currentTime - lastCalled
+        const currentLimit = currentTime - lastCalled
 
         if(currentLimit >= limit){
-            fn(params)
+            fn(...args)
             lastCalled = currentTime;
         }
     }
