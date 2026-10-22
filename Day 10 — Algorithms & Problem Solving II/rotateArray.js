@@ -21,9 +21,9 @@
 
 
 const rotateArray = (arr, k) => {
-  if (!arr.length) return [];
-  const rotations = k % arr.length;
-  
+  if (!Array.isArray(arr) || arr.length === 0) return [];
+  const rotations = ((k % arr.length) + arr.length) % arr.length;
+
   // Guard for k = 0 or k = multiples of arr.length (no rotation needed)
   if (rotations === 0) return [...arr];
 

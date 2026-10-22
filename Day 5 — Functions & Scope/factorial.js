@@ -8,6 +8,8 @@
 
 
 const factorial = (num) => {
+    if (num < 0) return undefined;
+
     let res = 1
     for (let i = num; i >= 1; i--){
          res = res * i;
